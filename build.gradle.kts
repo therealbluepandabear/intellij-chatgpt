@@ -20,6 +20,10 @@ intellij {
     plugins.set(listOf(/* Plugin Dependencies */))
 }
 
+dependencies {
+    implementation(group = "net.sourceforge.htmlunit", name = "htmlunit", version = "2.67.0")
+}
+
 tasks {
     // Set the JVM compatibility versions
     withType<JavaCompile> {
