@@ -8,6 +8,7 @@ class ChatGPTToolWindowFactory : ToolWindowFactory {
         val myToolWindow = ChatGPTToolWindow(toolWindow)
         val contentFactory = ContentFactory.SERVICE.getInstance()
         val content = contentFactory.createContent(myToolWindow.getContent(), "", false)
+
         toolWindow.contentManager.addContent(content);
     }
 }
